@@ -7,9 +7,8 @@ BEGIN {
     }
 }
 
-use warnings;
 use strict;
-
+use warnings;
 use Test::More;
 use Log::Log4perl qw(:easy);
 use File::Spec;
@@ -44,7 +43,7 @@ unlink $TMP_FILE;
 open STDERR, ">$TMP_FILE";
 select STDERR; $| = 1; #needed on win32
 open IN, "<$TMP_FILE" or die "Cannot open $TMP_FILE";
-sub readstderr { return join("", <IN>); }
+sub readstderr { IN->clearerr(); return join("", <IN>); }
 
 ############################################################
 # Typical easy setup
@@ -233,3 +232,5 @@ like $@, qr/line $line/, "logdie with wrapper";
 # Finally close
 ############################################################
 close IN;
+
+done_testing;

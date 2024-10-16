@@ -12,7 +12,7 @@ Build-Depends-Indep: libdbd-csv-perl <!nocheck>,
                      librrds-perl <!nocheck>,
                      libxml-dom-perl <!nocheck>,
                      perl
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/liblog-log4perl-perl
 Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/liblog-log4perl-perl.git
 Homepage: https://metacpan.org/release/Log-Log4perl
@@ -20,6 +20,7 @@ Rules-Requires-Root: no
 
 Package: liblog-log4perl-perl
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends},
          ${perl:Depends}
 Recommends: libipc-shareable-perl,

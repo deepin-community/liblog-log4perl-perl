@@ -2,7 +2,7 @@ Subject: [PATCH] More spelling fixes in the POD.
 Origin: vendor
 Forwarded: no
 From: gregor herrmann <gregoa@debian.org>
-Last-Update: 2020-07-22
+Last-Update: 2022-06-03
 
 --- a/lib/Log/Log4perl.pm
 +++ b/lib/Log/Log4perl.pm
@@ -15,7 +15,7 @@ Last-Update: 2020-07-22
  are provided in C<:easy> mode, facilitating the use of C<logcarp()>,
  C<logcluck()>, C<logcroak()>, and C<logconfess()> with stealth loggers.
  
-@@ -2762,7 +2762,7 @@ would even play along in the Log::Log4pe
+@@ -2768,7 +2768,7 @@ would even play along in the Log::Log4pe
  A call to C<Log::Log4perl-E<gt>infiltrate_lwp()> does exactly this. 
  In a very rude way, it pulls the rug from under LWP::UserAgent and transforms
  its C<debug/conn> messages into C<debug()> calls of loggers of the category
