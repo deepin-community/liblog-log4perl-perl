@@ -14,7 +14,7 @@ Comment: This library is free software; you can redistribute
 
 Files: debian/*
 Copyright: 2004, 2005, 2006, 2013 Manoj Srivastava <srivasta@debian.org>
- 2015-2021, gregor herrmann <gregoa@debian.org>
+ 2015-2022, gregor herrmann <gregoa@debian.org>
 License: Artistic-1.0
 
 License: Artistic-1.0
